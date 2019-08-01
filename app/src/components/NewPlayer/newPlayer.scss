@@ -1,0 +1,21 @@
+@import '../../scss/abstracts/index';
+
+.new-player-form form {
+  @include flex-complete($direction: column, $justify: flex-start, $align: center);
+  width: 80%;
+  margin: 5% auto;
+
+  @include respond(tab-port) {
+    width: 98%;
+  }
+
+  .form-field {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .form-error {
+    color: red;
+    text-align: center;
+  }
+}
