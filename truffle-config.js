@@ -1,7 +1,7 @@
 var HDWalletProvider = require('truffle-hdwallet-provider');
 const path = require('path');
 
-const mnemonic = 'slogan vehicle jungle jeans already mushroom celery spoil witness entry remember release';
+const mnemonic = 'end insane large horse dismiss hole genre pull woman script gold ribbon';
 
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
