@@ -41,18 +41,18 @@ Breakpoint       Device ($breakpoint)
 1em = 16px
 */
 @mixin respond($breakpoint) {
-  @if $breakpoint == tab-port {
-    @media (min-width: 37.5em) {
+  @if $breakpoint == mobile {
+    @media (max-width: 37.5em) {
       @content;
     } // 600px
   }
-  @if $breakpoint == tab-land {
-    @media (min-width: 56.25em) {
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
       @content;
     } // 900px
   }
-  @if $breakpoint == desktop {
-    @media (min-width: 75em) {
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
       @content;
     } // 1200px
   }

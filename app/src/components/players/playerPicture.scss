@@ -1,0 +1,102 @@
+.player-picture {
+  width: 120px;
+  height: 267px;
+  position: relative;
+}
+.player-picture .head {
+  width: 93px;
+  height: 93px;
+  background: #f0d4a6;
+  border-radius: 100%;
+  margin: 0 auto;
+  padding: 1px 0;
+}
+
+/* Eyes */
+.player-picture .head .eyes {
+  margin: 27px 0 0 21%;
+}
+
+.player-picture .head .eyes:after {
+  content: '';
+  display: block;
+  width: 13px;
+  height: 13px;
+  background: #000;
+  position: absolute;
+  border-radius: 100%;
+  box-shadow: 42px 0px 0;
+}
+
+.player-picture .body {
+  width: 80%;
+  height: calc(100% - 140px);
+  margin: 0 auto;
+}
+
+.player-picture .body-upper {
+  display: flex;
+  height: 40%;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.player-picture .shirt {
+  width: 54%;
+  height: 100%;
+}
+
+.player-picture .arm {
+  width: 23%;
+  height: 85%;
+  background: #f0d4a6;
+  border-radius: 100px;
+}
+
+.player-picture .arm .arm-shirt {
+  width: 100%;
+  height: 30%;
+}
+
+.player-picture .arm.arm-left .arm-shirt {
+  border-top-left-radius: 15px;
+}
+
+.player-picture .arm.arm-right .arm-shirt {
+  border-top-right-radius: 15px;
+}
+
+.player-picture .shorts {
+  width: 54%;
+  height: 25%;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.player-picture .body-legs {
+  display: flex;
+  height: 35%;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.player-picture .leg {
+  width: 27%;
+  height: 100%;
+  background: #f0d4a6;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  z-index: -1;
+}
+
+.team-1 .shirt {
+  background-color: #3b3bab;
+}
+
+.team-1 .arm-shirt {
+  background-color: #3b3bab;
+}
+
+.team-1 .shorts {
+  background-color: #c73939;
+}

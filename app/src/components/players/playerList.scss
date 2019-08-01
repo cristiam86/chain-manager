@@ -1,0 +1,6 @@
+@import '../../scss/abstracts/index';
+
+.players-card-list {
+  @include flex-complete($direction: row, $justify: space-between, $align: flex-start, $wrap: wrap);
+  padding-top: 20px;
+}

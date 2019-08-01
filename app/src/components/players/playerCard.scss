@@ -1,0 +1,70 @@
+@import '../../scss/abstracts/index';
+
+.player-card {
+  @include flex-complete($direction: column, $justify: flex-start, $align: flex-start);
+  width: 48%;
+  padding: 2%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 0px #000;
+  margin-bottom: 20px;
+
+  .player-card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .player-card-stats-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .player-card-info {
+    @include flex-complete($justify: space-between, $align: flex-start);
+    width: 100%;
+
+    .player-card-picture {
+      width: 30%;
+    }
+    .player-card-info-stats {
+      @include flex-complete($direction: column, $justify: flex-start, $align: flex-start);
+      width: 63%;
+
+      .player-card-stats-upper {
+        @include flex-complete($justify: space-between, $align: flex-start);
+        width: 100%;
+
+        .player-card-stats-upper-section {
+          width: 48%;
+        }
+      }
+
+      .player-card-stats-bottom {
+        width: 100%;
+      }
+
+      .player-stats-list {
+        margin-bottom: 20px;
+        width: 96%;
+
+        &.vertical {
+          @include flex-complete($direction: column, $justify: flex-start, $align: flex-start);
+        }
+
+        &.horizontal {
+          @include flex-complete($justify: space-between, $align: center);
+          .player-stat-item {
+            width: 47%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond(tab-port) {
+  .player-card {
+    width: 100%;
+  }
+}
