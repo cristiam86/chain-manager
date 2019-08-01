@@ -4,6 +4,8 @@ Chain manager is a crypto collectible game of soccer players. Users can buy and 
 
 The player stats are calculated with a pseudo random function with the help of the Rhombus Oracle.
 
+The project is available on [http://chain-manager.iamtech.tech/](http://chain-manager.iamtech.tech/)
+
 ## Setup environment
 
 1. Install dependencies
