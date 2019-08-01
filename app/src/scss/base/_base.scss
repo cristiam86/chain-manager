@@ -1,0 +1,54 @@
+html {
+  // font-family: $primary-font;
+  // background-color: $gray-light;
+  // color: $blue-corp;
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  box-sizing: border-box;
+  // font-size: 17px;
+  // font-family: $primary-font;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+.main-container {
+  position: relative;
+}
+
+.bold {
+  font-weight: 700;
+}
+.regular,
+.regular p {
+  font-weight: 400;
+}
+.light {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+p {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+input:focus {
+  outline: none;
+}
